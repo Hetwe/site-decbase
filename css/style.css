@@ -543,25 +543,56 @@ body{
     margin-bottom: 51px;
 }
 
-.next{
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 50%;
-    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
-    background: url(../img/svg/next.svg) center no-repeat;
-    background-color: #37806B;
+
+
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
 }
 
-.previous{
+.previous__button{
     width: 30px;
     height: 30px;
     border: none;
     border-radius: 50%;
     background-color: #ffffff;
     box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
-    background: url(../img/svg/previous.svg) center no-repeat;
+    transition: .4s;
 }
+
+.previous__button:hover{
+    background-color: #37806b;
+}
+.previous__button:hover .previous__svg{
+    stroke: white;
+}
+.previous__svg{
+    stroke: #646464;
+    stroke-width: 2;
+}
+
+.next__button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    transition: .4s;
+}
+
+.next__button:hover{
+    background-color: #37806b;
+}
+.next__button:hover .next__svg{
+    stroke: white;
+}
+.next__svg{
+    stroke: #646464;
+    stroke-width: 2;
+}
+
 
 .service__cards{
     width: 100%;
